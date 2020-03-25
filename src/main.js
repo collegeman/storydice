@@ -9,12 +9,6 @@ import store from './store'
 // import openemoji from './assets/openmoji.json'
 // import dice from './assets/dice.json'
 
-const reqSvgs = require.context('./assets/openmoji-svg-color', true, /\.svg$/)
-window.svgs = reqSvgs.keys().reduce((images, path) => {
-  images[path] = reqSvgs(path)
-  return images
-}, {})
-
 Vue.config.productionTip = false
 
 Vue.use(BootstrapVue)

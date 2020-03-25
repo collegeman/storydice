@@ -4,7 +4,7 @@
       <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
       <title>Template</title>
       <desc>Created with Sketch.</desc>
-      <g id="Template" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Template" stroke="none" stroke-width="1" fill-rule="evenodd">
         <g id="Die" transform="translate(40.000000, 78.000000)">
           <g id="Flaps" fill="#EFEFEF">
             <path d="M191,0 L341,0 L341,40 L191,40 L191,0 Z" id="Flap"></path>
@@ -17,32 +17,32 @@
           </g>
           <g id="Sides" transform="translate(66.000000, 66.000000)">
             <g id="Side1" transform="translate(151.000000, 0.000000)">
-              <g id="Shape1">
+              <g id="Shape1" v-html="shape1">
                 <rect id="Placeholder" x="0" y="0" width="100" height="100"></rect>
               </g>
             </g>
             <g id="Side2" transform="translate(151.000000, 149.000000)">
-              <g id="Shape2">
+              <g id="Shape2" v-html="shape2">
                 <rect id="Placeholder" x="0" y="0" width="100" height="100"></rect>
               </g>
             </g>
             <g id="Side3" transform="translate(0.000000, 149.000000)">
-              <g id="Shape3">
+              <g id="Shape3" v-html="shape3">
                 <rect id="Placeholder" x="0" y="0" width="100" height="100"></rect>
               </g>
             </g>
             <g id="Side4" transform="translate(302.000000, 149.000000)">
-              <g id="Shape4">
+              <g id="Shape4" v-html="shape4">
                 <rect id="Placeholder" x="0" y="0" width="100" height="100"></rect>
               </g>
             </g>
             <g id="Side5" transform="translate(151.000000, 300.000000)">
-              <g id="Shape5">
+              <g id="Shape5" v-html="shape5">
                 <rect id="Placeholder" x="0" y="0" width="100" height="100"></rect>
               </g>
             </g>
             <g id="Side6" transform="translate(151.000000, 451.000000)">
-              <g id="Shape7">
+              <g id="Shape6" v-html="shape6">
                 <rect id="Placeholder" x="0" y="0" width="100" height="100"></rect>
               </g>
             </g>
@@ -69,17 +69,26 @@
 </style>
 
 <script>
+import { loadSvg } from '@/utils'
+
 export default {
-  mounted () {
-    let ajax = new XMLHttpRequest()
-    ajax.open("GET", window.svgs['./1F0CF.svg'], true)
-    ajax.send();
-    ajax.onload = function() {
-      let div = document.createElement("div");
-      let svg = ajax.responseText
-      div.innerHTML = svg.replace('id="emoji"', 'id="emoji_' + '1F0CF1"')
-      document.body.insertBefore(div, document.body.childNodes[0])
+  data () {
+    return {
+      shape1: '',
+      shape2: '',
+      shape3: '',
+      shape4: '',
+      shape5: '',
+      shape6: ''
     }
+  },
+  async mounted () {
+    this.shape1 = await loadSvg('1F601')
+    this.shape2 = await loadSvg('1F606')
+    this.shape3 = await loadSvg('1F609')
+    this.shape4 = await loadSvg('1F60D')
+    this.shape5 = await loadSvg('1F92A')
+    this.shape6 = await loadSvg('1F92B')
   }
 }
 </script>

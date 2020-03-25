@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.4954293227f34ed06ae5453701d50b88.js"
+  "precache-manifest.c6774f77a22ac06d5a76a19bb78646ee.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "storydice"});
