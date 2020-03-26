@@ -1,0 +1,54 @@
+@import 'flat-colors';
+
+$black:                     #111 !default;
+$white:                     #fff !default;
+$primary:                   $flat-peter-river;
+$secondary:                 $white;
+$danger:                    $flat-alizarin;
+$success:                   $flat-nephritis;
+$warning:                   $flat-sunflower;
+$info:                      $flat-turquoise;
+$light-gray:                $flat-silver;
+$dark:                      $flat-wet-asphalt;
+$body-bg:                   $white;
+$component-active-bg:       $flat-peter-river;
+$link-color:                $flat-peter-river;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "primary":                $primary,
+  "secondary":              $secondary,
+  "light-gray":             $light-gray,
+  "black":                  $black,
+  "white":                  $white,
+  "body":                   $body-bg,
+  "flat-turquoise":         $flat-turquoise,
+  "flat-green-sea":         $flat-green-sea,
+  "flat-emerald":           $flat-emerald,
+  "flat-nephritis":         $flat-nephritis,
+  "flat-peter-river":       $flat-peter-river,
+  "flat-belize-hole":       $flat-belize-hole,
+  "flat-wet-asphalt":       $flat-wet-asphalt,
+  "flat-midnight-blue":     $flat-midnight-blue,
+  "flat-amethyst":          $flat-amethyst,
+  "flat-wisteria":          $flat-wisteria,
+  "flat-sunflower":         $flat-sunflower,
+  "flat-orange":            $flat-orange,
+  "flat-carrot":            $flat-carrot,
+  "flat-pumpkin":           $flat-pumpkin,
+  "flat-alizarin":          $flat-alizarin,
+  "flat-pomegranate":       $flat-pomegranate,
+  "flat-clouds":            $flat-clouds,
+  "flat-dark-clouds":       darken($flat-clouds, 10%),
+  "flat-darker-clouds":     darken($flat-clouds, 20%),
+  "flat-silver":            $flat-silver,
+  "flat-concrete":          $flat-concrete,
+  "flat-asbestos":          $flat-asbestos
+), $theme-colors);
+
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+
+.btn-white {
+  @include button-variant($white, $light-gray);
+}

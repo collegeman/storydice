@@ -54,6 +54,28 @@
                 <line x1="151" y1="602.5" x2="302" y2="602.5" id="Line-4"></line>
                 <line x1="151" y1="449.5" x2="302" y2="449.5" id="Line-4"></line>
             </g>
+            <g id="Cutlines" stroke="#979797" stroke-dasharray="5" stroke-linecap="square" stroke-width="2">
+                <line x1="0.5" y1="190.5" x2="190" y2="191" id="Line-5"></line>
+                <line x1="345.5" y1="190.5" x2="533.5" y2="190.5" id="Line-6"></line>
+                <line x1="0.5" y1="191.5" x2="0.5" y2="339.5" id="Line-7"></line>
+                <line x1="0.5" y1="339.5" x2="190.5" y2="339.5" id="Line-8"></line>
+                <line x1="151.5" y1="339.5" x2="151" y2="488" id="Line-9"></line>
+                <line x1="151.5" y1="489.5" x2="191.5" y2="489.5" id="Line-10"></line>
+                <line x1="190.5" y1="490.5" x2="191" y2="643" id="Line-11"></line>
+                <line x1="194.5" y1="642.5" x2="341.5" y2="643.5" id="Line-12"></line>
+                <line x1="342.5" y1="642.5" x2="341.5" y2="489.5" id="Line-13"></line>
+                <line x1="345.5" y1="489.5" x2="381.5" y2="489.5" id="Line-14"></line>
+                <line x1="381.5" y1="486.5" x2="381.5" y2="341.5" id="Line-15"></line>
+                <line x1="342.5" y1="339.5" x2="533.5" y2="341.5" id="Line-16"></line>
+                <line x1="533.5" y1="339.5" x2="533.5" y2="190.5" id="Line-17"></line>
+                <line x1="151.5" y1="190.5" x2="151.5" y2="40.5" id="Line-18"></line>
+                <line x1="151.5" y1="40.5" x2="190.5" y2="40.5" id="Line-19"></line>
+                <line x1="191" y1="40" x2="191.5" y2="0.5" id="Line-20"></line>
+                <line x1="191.5" y1="0.5" x2="341.5" y2="0.5" id="Line-21"></line>
+                <line x1="341.5" y1="0.5" x2="341.5" y2="40.5" id="Line-22"></line>
+                <line x1="345.5" y1="40.5" x2="382.5" y2="40.5" id="Line-23"></line>
+                <line x1="381.5" y1="40.5" x2="381.5" y2="190.5" id="Line-24"></line>
+            </g>
         </g>
     </g>
 </svg>
